@@ -1,0 +1,102 @@
+#Business Questions
+
+##Q1. What’s the average number of people per state who have been told they have mental disorder?
+-- Q1 Each state’s population who have been told they have mental disorder.
+select 
+state_id.`x.state`, count(*)
+FROM `fact`
+LEFT JOIN state_id ON state_id.`﻿State_ID` = `fact`.`﻿state_ID`
+WHERE addepev2 = 1
+GROUP BY state_id.`x.state`
+
+-- Q1 Population of each state
+select 
+state_id.`x.state`, count(*)
+FROM `fact`
+LEFT JOIN state_id ON state_id.`﻿State_ID` = `fact`.`﻿state_ID`
+GROUP BY state_id.`x.state`
+
+**We use each state’s mental disorder number to divide state’s total population then we get percentage of average number.
+
+Q2. What’s the average education level of people who have been told they have mental disorder?
+-- Q2 Each education level who have been told they have mental disorder.
+select 
+edu.`educa`, count(*)
+FROM `fact`
+LEFT JOIN `edu` on `edu`.`edu_ID` = `fact`.`educa_ID`
+LEFT JOIN `addepev` on `addepev`.`addepev_id` = `fact`.`addepev_id`
+WHERE fact.addepev2 = 1
+GROUP BY edu.`educa`
+
+-- Q2 Each education level population
+select 
+edu.`educa`, count(*)
+FROM `fact`
+LEFT JOIN `edu` on `edu`.`edu_ID` = `fact`.`educa_ID`
+LEFT JOIN `addepev` on `addepev`.`addepev_id` = `fact`.`addepev_id`
+-- WHERE fact.addepev2 = 1
+GROUP BY edu.`educa`
+
+**We use each education level to divide education total population then we get percentage of each education level who has mental disorder percentage.
+
+
+Q3. What’s the average income level of people who have been told they have mental disorder?
+
+-- Q3 Income’s population who have been told they have mental disorder.
+select 
+`income_id`.`income2`, count(*)
+FROM `fact`
+LEFT JOIN income_id ON `income_id`.`income_ID` = `fact`.`income_ID`
+LEFT JOIN `addepev` on `addepev`.`addepev_id` = `fact`.`addepev_id`
+WHERE fact.addepev2 = 1
+GROUP BY income_id.`income2`
+
+-- Q3 Each income level population
+select 
+`income_id`.`income2`, count(*)
+FROM `fact`
+LEFT JOIN income_id ON `income_id`.`income_ID` = `fact`.`income_ID`
+LEFT JOIN `addepev` on `addepev`.`addepev_id` = `fact`.`addepev_id`
+-- WHERE fact.addepev2 = 1
+GROUP BY income_id.`income2`
+
+**We use each income level to divide income total population then we get percentage of each income level who has mental disorder percentage.
+
+
+Q4. What race  has the highest reported number of people with mental disorder?
+
+Q4 Each race population 
+select 
+race.`x.imprace`, count(*)
+FROM `fact`
+LEFT JOIN `race` on `race`.`Race_id` = `fact`.`race_id`
+LEFT JOIN `addepev` on `addepev`.`addepev_id` = `fact`.`addepev_id`
+GROUP BY `race`.`x.imprace`
+
+Q4 Each race who have been told they have mental disorder 
+select 
+race.`x.imprace`, count(*)
+FROM `fact`
+LEFT JOIN `race` on `race`.`Race_id` = `fact`.`race_id`
+LEFT JOIN `addepev` on `addepev`.`addepev_id` = `fact`.`addepev_id`
+WHERE fact.addepev2 = 1
+GROUP BY `race`.`x.imprace`
+
+Q5 What is the ratio of male to female who have been told they have mental disorder?
+
+Q5 Each gender who have been told they have mental disorder 
+select 
+gender.`sex`, count(*)
+FROM `fact`
+LEFT JOIN `gender` on `gender`.`sex_id` = `fact`.`sex_id`
+LEFT JOIN `addepev` on `addepev`.`addepev_id` = `fact`.`addepev_id`
+WHERE fact.addepev2 = 1
+GROUP BY gender.`sex`
+
+Q5 Each gender population
+gender.`sex`, count(*)
+FROM `fact`
+LEFT JOIN `gender` on `gender`.`sex_id` = `fact`.`sex_id`
+LEFT JOIN `addepev` on `addepev`.`addepev_id` = `fact`.`addepev_id`
+-- WHERE fact.addepev2 = 1
+GROUP BY gender.`sex`
