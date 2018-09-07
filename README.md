@@ -22,8 +22,8 @@ The granularity of the data can be determined from the above dimensions or vice 
 Star Scheme is as follows:
 
 
-![screen shot 2018-08-03 at 2 28 47 pm](https://user-images.githubusercontent.com/31625655/45192413-34d1f600-b216-11e8-9a15-9fd20e55f88c.png) 
-<img src="https://user-images.githubusercontent.com/31625655/45192413-34d1f600-b216-11e8-9a15-9fd20e55f88c.png" width="200" height="200" align="right" />
+![image](https://user-images.githubusercontent.com/31625655/45193092-61880c80-b21a-11e8-8195-b29ded7c099c.png)
+ <img src="(https://user-images.githubusercontent.com/31625655/45193092-61880c80-b21a-11e8-8195-b29ded7c099c.png)" width="200" height="200" align="center" />
 
 Relevant questions on this data set:
 Which state has the highest number of inspections?
