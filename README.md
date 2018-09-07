@@ -23,7 +23,7 @@ Star Scheme is as follows:
 
 
 ![image](https://user-images.githubusercontent.com/31625655/45193092-61880c80-b21a-11e8-8195-b29ded7c099c.png)
- <img src="(https://user-images.githubusercontent.com/31625655/45193092-61880c80-b21a-11e8-8195-b29ded7c099c.png)" width="200" height="200" align="center" />
+ <img src="(https://user-images.githubusercontent.com/31625655/45193092-61880c80-b21a-11e8-8195-b29ded7c099c.png)" width="200" height="200" align="center"/>
 
 Relevant questions on this data set:
 Which state has the highest number of inspections?
