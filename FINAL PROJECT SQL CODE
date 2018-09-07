@@ -1,6 +1,6 @@
-##Business Questions
+## Business Questions
 
-##Q1. What’s the average number of people per state who have been told they have mental disorder?
+Q1. What’s the average number of people per state who have been told they have mental disorder?
 -- Q1 Each state’s population who have been told they have mental disorder.
 select 
 state_id.`x.state`, count(*)
