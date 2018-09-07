@@ -28,5 +28,7 @@ Star Scheme is as follows:
 
 Relevant questions on this data set:
 Which state has the highest number of inspections?
+
 Which public housing has the lowest inspections score?
+
 Which state received more than one inspection per year?
