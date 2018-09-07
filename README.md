@@ -20,7 +20,9 @@ The granularity of the data can be determined from the above dimensions or vice 
 •	PHA_Code, PHA_name
 •	CBSA_Code , County_name , County_code
 Star Scheme is as follows:
- 
+
+
+![screen shot 2018-08-03 at 2 28 47 pm](https://user-images.githubusercontent.com/31625655/45192413-34d1f600-b216-11e8-9a15-9fd20e55f88c.png)
 
 Relevant questions on this data set:
 Which state has the highest number of inspections?
