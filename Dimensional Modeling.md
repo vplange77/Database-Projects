@@ -7,31 +7,31 @@ The data set provided is on public housing inspection data. Public housing is wh
 
 These are the following dimensions and dimension tables that can be formed using the given data.
 Development table: 
-Development ID (PK), Development Name, Address ID(FK), Location Quality
-Address Table:
-Address ID(PK), Address, City, State ID(FK)	
-State Table: 
-State ID(PK), State Name, ZIP, Latitude, Longitude, CBSA CODE(FK)
-CBSA Table: 
-CBSA CODE(PK), County_name, County_code
-PHA Table: 
-PHA_CODE, Pha_Name
+
+* Development ID (PK), Development Name, Address ID(FK), Location Quality
+* Address Table:
+* Address ID(PK), Address, City, State ID(FK)	
+* State Table: 
+* State ID(PK), State Name, ZIP, Latitude, Longitude, CBSA CODE(FK)
+* CBSA Table: 
+* CBSA CODE(PK), County_name, County_code
+* PHA Table: 
+* PHA_CODE, Pha_Name
 
 The granularity of the data can be determined from the above dimensions or vice versa. The related fields would be: 
-•	Development ID, Inspection score, Development Name
-•	Development ID, Inspection ID, Address
-•	PHA_Code, PHA_name
-•	CBSA_Code , County_name , County_code
-Star Scheme is as follows:
+* Development ID, Inspection score, Development Name
+* Development ID, Inspection ID, Address
+* PHA_Code, PHA_name
+* CBSA_Code , County_name , County_code
+
+## Star Schema is as follows:
 
 
 ![image](https://user-images.githubusercontent.com/31625655/45193092-61880c80-b21a-11e8-8195-b29ded7c099c.png)
  <img src="(https://user-images.githubusercontent.com/31625655/45193092-61880c80-b21a-11e8-8195-b29ded7c099c.png)" width="200" height="200" align="center"/>
-
+ 
 Relevant questions on this data set:
 
-Which state has the highest number of inspections?
-
-Which public housing has the lowest inspections score?
-
-Which state received more than one inspection per year?
+* Which state has the highest number of inspections?
+* Which public housing has the lowest inspections score?
+* Which state received more than one inspection per year?
